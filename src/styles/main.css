@@ -4,6 +4,7 @@ body {
     align-items: center;
     min-height: 100vh;
     background-color: #fc1e8a;
+    user-select: none;
 }
 
 
@@ -67,4 +68,28 @@ h2 {
     align-items: center;
     justify-content: center;
     background-color: #fff;
+
+    font-size: 3em;
+    transform: rotateY(180deg);
+    transition: 0.25s;
+}
+
+.item::after{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: #404040;
+    opacity: 0.85;
+    transition: 0.25s;
+    transform: rotateY(0deg);
+    backface-visibility: hidden;
+}
+
+.item.boxOpen {
+    transform: rotateY(0deg);
+}
+
+.boxOpen::after,
+.boxMatch::after {
+    transform: rotateY(180deg);
 }
