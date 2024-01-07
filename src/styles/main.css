@@ -3,7 +3,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: #fc1e8a;
+    background-color: #626986;
     user-select: none;
 }
 
@@ -15,12 +15,8 @@ body {
     justify-content: center;
     align-items: center;
     gap: 30px;
-    background: linear-gradient(325deg,
-     #03001e 0%,
-     #7303c0 30%,
-     #ec38bc 70%,
-     #fdeff9 100%
-    );
+    background: rgb(2,0,36);
+    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(38,50,129,1) 10%, rgba(33,49,130,1) 73%, rgba(86,61,124,1) 100%);
     padding: 40px 60px;
 }
 
